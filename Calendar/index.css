@@ -1,0 +1,16 @@
+h1 {
+   position: relative;
+   left: 42%;    
+}
+.month {
+    left: 46%;
+}
+table {
+    position: relative;
+    left: 38%;
+    
+}
+td {
+    border: 1px;
+    width: 30px;
+}
