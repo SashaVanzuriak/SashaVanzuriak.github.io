@@ -1,19 +1,27 @@
 h1 {
    position: relative;
-   left: 42%;    
+   left: 50%;    
 }
 .month {
-    left: 45%;
+    left: 53%;
 }
 .Year {
-    left: 45%;
+    left: 52%;
 }
 table {
+    width: 600px;   
+    height: 300px; 
     position: relative;
-    left: 38%;
+    left: 33%;
+    border-collapse: collapse;
     
 }
-td {
-    border: 1px;
+td { 
+    width: 100px;   
+    border: 1px solid black;
     width: 30px;
+    text-align: center;
+}
+.nameMonth {
+   background-color: aquamarine;
 }

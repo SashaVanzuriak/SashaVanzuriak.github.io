@@ -21,7 +21,7 @@ Year.innerHTML = Years
 
 
 const dayInMonth = thisMonth((Number(now.getMonth()) + 1), now.getFullYear())
-for(let i=0; i < dayInMonth + firstDay; i++) {
+for(let i=0; i < dayInMonth; i++) {
   let Monthdays = document.querySelector(thisDay[i + firstDay])
   Monthdays.innerHTML = i + 1;
 }
