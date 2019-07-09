@@ -3,7 +3,10 @@ h1 {
    left: 42%;    
 }
 .month {
-    left: 46%;
+    left: 45%;
+}
+.Year {
+    left: 45%;
 }
 table {
     position: relative;
