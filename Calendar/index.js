@@ -10,23 +10,16 @@ const now = new Date();
 const Months = monthNames[now.getMonth()]
 let Years = now.getFullYear()
 const MonthNumber = now.getMonth()
-const firstDay = new Date(Years, MonthNumber, 1).getDay()
-let dayInMonth = thisMonth((Number(now.getMonth()) + 1), now.getFullYear())
+let firstDay = new Date(Years, MonthNumber, 1).getDay()
+let dayInMonth = thisMonth((Number(MonthNumber) + 1), now.getFullYear());
 let OneButton = document.querySelector(".oneButton")
 let MonthDate = now.getMonth()
+let Numbers = Number(MonthNumber) + 1;
+let NewMonth = MonthNumber;
 function thisMonth (month, year) {
   return new Date(year, month, 0).getDate()
 }
-function one() {
-  MonthDate = MonthDate - 1
-  month.innerHTML = monthNames[MonthDate] 
-  if (MonthDate === 0) {
-    MonthDate = 11
-    Years = Years - 1
-    Year.innerHTML = Years 
-  }
-}
-
+console.log(MonthNumber)
 
 month.innerHTML = Months
 Year.innerHTML = Years
@@ -36,4 +29,39 @@ Year.innerHTML = Years
 for(let i=0; i < dayInMonth; i++) {
   let Monthdays = document.querySelector(thisDay[i + firstDay])
   Monthdays.innerHTML = i + 1;
+}
+
+function one() {
+  if (MonthDate === 0) {
+    MonthDate = 12
+    Years = Years - 1
+    Year.innerHTML = Years 
+  } 
+  MonthDate = MonthDate - 1
+  month.innerHTML = monthNames[MonthDate]
+}
+function two() {
+  if (MonthDate >= 11) {
+    MonthDate = -1
+    Years = Years + 1
+    Year.innerHTML = Years 
+  }
+  MonthDate = MonthDate + 1
+  month.innerHTML = monthNames[MonthDate]
+  for(let i=0; i < dayInMonth; i++) {
+    let Monthdays = document.querySelector(thisDay[i + firstDay])
+    Monthdays.innerHTML = "";
+  }
+  if (NewMonth >= 11) {
+    NewMonth = - 1;
+    Numbers = - 1;
+  }
+  Numbers = Numbers + 1;
+  NewMonth = NewMonth + 1;
+  dayInMonth = thisMonth(Numbers, now.getFullYear())
+  firstDay = new Date(Years, NewMonth, 1).getDay()
+  for(let i=0; i < dayInMonth; i++) {
+    let Monthdays = document.querySelector(thisDay[i + firstDay])
+    Monthdays.innerHTML = i + 1;
+  }
 }
