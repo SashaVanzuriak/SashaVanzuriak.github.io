@@ -38,8 +38,26 @@ function one() {
     Years = Years - 1
     Year.innerHTML = Years 
   } 
+  for(let i=0; i < dayInMonth; i++) {
+    let Monthdays = document.querySelector(thisDay[i + firstDay])
+    Monthdays.innerHTML = "";
+  }
   MonthDate = MonthDate - 1
   month.innerHTML = monthNames[MonthDate]
+  if (Numbers <= 0) {
+    Numbers = 12;
+  }
+  if (NewMonth <= 0) {
+    NewMonth = 12;
+  }
+  Numbers = Numbers - 1;
+  NewMonth = NewMonth - 1;
+  dayInMonth = thisMonth(Numbers, now.getFullYear())
+  firstDay = new Date(Years, NewMonth, 1).getDay()
+  for(let i=0; i < dayInMonth; i++) {
+    let Monthdays = document.querySelector(thisDay[i + firstDay])
+    Monthdays.innerHTML = i + 1;
+  }
 }
 function two() {
  
@@ -63,8 +81,6 @@ function two() {
   }
   Numbers = Numbers + 1;
   NewMonth = NewMonth + 1;
-  console.log(Numbers)
-  console.log(NewMonth)
   dayInMonth = thisMonth(Numbers, now.getFullYear())
   firstDay = new Date(Years, NewMonth, 1).getDay()
   
