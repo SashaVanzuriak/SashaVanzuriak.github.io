@@ -5,7 +5,8 @@ const monthNames = ["January", "February", "March", "April", "May", "June",
   "July", "August", "September", "October", "November", "December"
 ];
 let thisDay = [".one", ".two", ".tree", ".four", ".five", ".six", ".seven", ".eight", ".nine", ".ten", ".eleven", ".twelve", ".thirteen", ".fourteen", ".fiveteen", ".sixteen", ".seventeen", ".eightteen",
-".nineteen",".twenty", ".twenty-one", ".twenty-two", ".twenty-tree", ".twenty-four", ".twenty-five", ".twenty-six", ".twenty-seven", ".twenty-eight", ".twenty-nine", ".thirty", ".thirty-one", ".thirty-two", ".thirty-tree", ".thirty-four", ".thirty-five"]
+".nineteen",".twenty", ".twenty-one", ".twenty-two", ".twenty-tree", ".twenty-four", ".twenty-five", ".twenty-six", ".twenty-seven", ".twenty-eight", ".twenty-nine", ".thirty", ".thirty-one", ".thirty-two", ".thirty-tree", ".thirty-four", ".thirty-five",
+".thirty-six", ".thirty-seven", ".thirty-eight", ".thirty-nine", ".fourteen", ".fourteen-one", "fourteen-two"]
 const now = new Date();
 const Months = monthNames[now.getMonth()]
 let Years = now.getFullYear()
@@ -41,6 +42,7 @@ function one() {
   month.innerHTML = monthNames[MonthDate]
 }
 function two() {
+ 
   if (MonthDate >= 11) {
     MonthDate = -1
     Years = Years + 1
@@ -52,14 +54,20 @@ function two() {
     let Monthdays = document.querySelector(thisDay[i + firstDay])
     Monthdays.innerHTML = "";
   }
+  
+  if (Numbers >= 11) {
+    Numbers = -1;
+  }
   if (NewMonth >= 11) {
-    NewMonth = - 1;
-    Numbers = - 1;
+    NewMonth = -1;
   }
   Numbers = Numbers + 1;
   NewMonth = NewMonth + 1;
+  console.log(Numbers)
+  console.log(NewMonth)
   dayInMonth = thisMonth(Numbers, now.getFullYear())
   firstDay = new Date(Years, NewMonth, 1).getDay()
+  
   for(let i=0; i < dayInMonth; i++) {
     let Monthdays = document.querySelector(thisDay[i + firstDay])
     Monthdays.innerHTML = i + 1;
