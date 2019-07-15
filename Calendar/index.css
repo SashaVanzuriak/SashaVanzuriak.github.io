@@ -1,10 +1,10 @@
 h1 {
    position: relative;
-   left: 20%;    
+   left: 30%;    
 }
 table {
-    height: 20%;
-    width: 20%;
+    height: 40%;
+    width: 40%;
     position: relative;
     left: 15%;
 }
@@ -30,15 +30,15 @@ button {
 }
 .twoButton {
     position: relative;
-    left: 32%;
+    left: 49%;
 }
 .nameMonth {
    background-color: aquamarine;
 }
 .month {
-    left: 21%;
+    left: 31%;
 }
 .Year {
-    left: 22%;
+    left: 32%;
 }
   
