@@ -17,6 +17,7 @@ let OneButton = document.querySelector(".oneButton")
 let MonthDate = now.getMonth()
 let Numbers = Number(MonthNumber) + 1;
 let NewMonth = MonthNumber;
+
 function thisMonth (month, year) {
   return new Date(year, month, 0).getDate()
 }

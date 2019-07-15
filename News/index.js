@@ -20,4 +20,11 @@
 
 // console.log("B")
 fetch("https://dev.to/api/articles ")
-.then(text => )
+.then(data => data.json())
+.then(data => {
+    data.forEach(element => {
+        const box = document.querySelector(".card-body");
+        box.innerHTML = element;
+        console.log(element)
+    });
+})
