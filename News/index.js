@@ -24,7 +24,40 @@ fetch("https://dev.to/api/articles ")
 .then(data => {
     data.forEach(element => {
         
-        const div = document.createElement("divs")
+        const div = document.createElement("div")
+        div.className = "card-deck"
         document.body.appendChild(div)
+
+        const divs = document.createElement("div")
+        divs.className = "card"
+        div.appendChild(divs)
+
+        const image = document.createElement("img")
+        image.src = element.cover_image
+        image.class = "card-img-top"
+        divs.appendChild(image)
+
+        const TreeDiv = document.createElement("div")
+        TreeDiv.className = "card-body"
+        divs.appendChild(TreeDiv)
+
+        const h5 = document.createElement("h5")
+        h5.innerHTML = element.title
+        h5.className = "card-title"
+        TreeDiv.appendChild(h5)
+
+        const p = document.createElement("p")
+        p.className = "card-text"
+        TreeDiv.appendChild(p)
+
+        const card = document.createElement("div")
+        card.className = "card-footer"
+        divs.appendChild(card)
+
+        const small = document.createElement("small")
+        small.className = "text-muted"
+        small.innerHTML = element.published_at
+        card.appendChild(small)
     })
 })
+

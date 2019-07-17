@@ -20,8 +20,8 @@ td {
     font-size: 20px;
 }
 button {
-    width: 3%;
-    height: 1%;
+    width: 5%;
+    height: 5%;
 }
 .oneButton {
     position: relative;
@@ -30,7 +30,8 @@ button {
 }
 .twoButton {
     position: relative;
-    left: 50%;
+    left: 85%;
+    padding: 15px;
 }
 .nameMonth {
    background-color: aquamarine;
