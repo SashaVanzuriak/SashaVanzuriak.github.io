@@ -23,8 +23,8 @@ fetch("https://dev.to/api/articles ")
 .then(data => data.json())
 .then(data => {
     data.forEach(element => {
-        const box = document.querySelector(".card-body");
-        box.innerHTML = element;
-        console.log(element)
-    });
+        
+        const div = document.createElement("divs")
+        document.body.appendChild(div)
+    })
 })

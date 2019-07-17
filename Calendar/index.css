@@ -22,15 +22,15 @@ td {
 button {
     width: 3%;
     height: 1%;
-    padding: 15px;
 }
 .oneButton {
     position: relative;
     left: 15%;
+    padding: 15px;
 }
 .twoButton {
     position: relative;
-    left: 85%;
+    left: 50%;
 }
 .nameMonth {
    background-color: aquamarine;
