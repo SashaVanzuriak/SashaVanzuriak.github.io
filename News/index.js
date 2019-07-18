@@ -23,10 +23,11 @@ fetch("https://dev.to/api/articles ")
 .then(data => data.json())
 .then(data => {
     data.forEach(element => {
-        
+        const user = element.user
+        const colons = document.querySelector(".col-sm")
         const div = document.createElement("div")
         div.className = "card-deck"
-        document.body.appendChild(div)
+        colons.appendChild(div)
 
         const divs = document.createElement("div")
         divs.className = "card"
@@ -50,14 +51,17 @@ fetch("https://dev.to/api/articles ")
         p.className = "card-text"
         TreeDiv.appendChild(p)
 
-        const card = document.createElement("div")
-        card.className = "card-footer"
-        divs.appendChild(card)
+        const card = document.createElement("img")
+        card.className = "image"
+        card.src = user.profile_image
+        TreeDiv.appendChild(card)
 
         const small = document.createElement("small")
         small.className = "text-muted"
         small.innerHTML = element.published_at
         card.appendChild(small)
+
+
     })
 })
 
