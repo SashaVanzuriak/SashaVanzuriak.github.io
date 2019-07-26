@@ -9,4 +9,9 @@ fetch('https://dev.to/api/articles/' + id).then(data => data.json()).then(data =
     imgFluid.className = "img-fluid"
     imgFluid.alt = "Responsive image"
     colums.appendChild(imgFluid)
+    
+    const title = document.createElement("p")
+    title.className = "title"
+    title.innerHTML = data.title
+    colums.appendChild(title)
 })

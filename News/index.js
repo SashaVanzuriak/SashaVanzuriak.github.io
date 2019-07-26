@@ -7,10 +7,6 @@ fetch("https://dev.to/api/articles").then(data => data.json())
 
         const blogCard = document.createElement("div")
         blogCard.className = "blog-card"
-        blogCard.onclick = function all(){
-            window.location.href = "./page.html?id=" + photo.id
-            
-        }
         colums.appendChild(blogCard)
 
         const meta = document.createElement("div")
@@ -21,10 +17,6 @@ fetch("https://dev.to/api/articles").then(data => data.json())
         photo.style = "background-image: url(" + element.cover_image + ")"
         photo.id = element.id
         photo.className = "photo"
-        photo.onclick = function all(){
-            window.location.href = "./page.html?id=" + photo.id
-            
-        }
         meta.appendChild(photo)
 
         const details = document.createElement("ul")
@@ -50,9 +42,18 @@ fetch("https://dev.to/api/articles").then(data => data.json())
         
     }
        description.appendChild(hed)
+       
+       const p = document.createElement("p")
+       p.className = "read-more"
+       description.appendChild(p)
 
        const readMore = document.createElement("a")
-       description.appendChild(readMore)
+       readMore.innerHTML = "Read more"
+       readMore.onclick = function all(){
+        window.location.href = "./page.html?id=" + photo.id
+        
+    }
+       p.appendChild(readMore)
        
     })
 })
