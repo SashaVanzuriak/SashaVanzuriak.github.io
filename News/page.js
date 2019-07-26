@@ -14,4 +14,9 @@ fetch('https://dev.to/api/articles/' + id).then(data => data.json()).then(data =
     title.className = "title"
     title.innerHTML = data.title
     colums.appendChild(title)
+
+    const bodyhtml = data.body_html
+    const text = document.createElement("p")
+    text.innerHTML += bodyhtml
+    colums.appendChild(text)
 })
