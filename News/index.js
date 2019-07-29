@@ -4,6 +4,7 @@ fetch("https://dev.to/api/articles").then(data => data.json())
 .then(data => {
     data.forEach(element => {
         const user = element.user
+        const tagList = element.tag_list
 
         const blogCard = document.createElement("div")
         blogCard.className = "blog-card"
@@ -34,6 +35,15 @@ fetch("https://dev.to/api/articles").then(data => data.json())
        const description = document.createElement("div")
        description.className = "description"
        blogCard.appendChild(description)
+
+       const h2 = document.createElement("h2")
+       for(let i=0; i<5; i++){
+           if(tagList[i] === undefined){
+             tagList[i] = " "          
+         }
+       }
+       h2.innerHTML = tagList[0] + " " + tagList[1] + " " + tagList[2] + " " + tagList[3] + " " + tagList[4]
+       description.appendChild(h2)
 
        const hed = document.createElement("p")
        hed.innerHTML = element.title

@@ -1,6 +1,7 @@
 let href = window.location.href
 let id = href.split("?")[1].split("=")[1]
 
+
 function home() {
     window.location.href = "./index.html"
 }
@@ -24,3 +25,4 @@ fetch('https://dev.to/api/articles/' + id).then(data => data.json()).then(data =
     text.innerHTML += bodyhtml
     colums.appendChild(text)
 })
+
