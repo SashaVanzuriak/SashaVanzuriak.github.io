@@ -39,10 +39,13 @@ fetch("https://dev.to/api/articles").then(data => data.json())
        const h2 = document.createElement("h2")
        for(let i=0; i<5; i++){
            if(tagList[i] === undefined){
-             tagList[i] = " "          
+             tagList[i] = " "
+                     
+         } else {
+              tagList[i] =  " #" + tagList[i]
          }
        }
-       h2.innerHTML = tagList[0] + " " + tagList[1] + " " + tagList[2] + " " + tagList[3] + " " + tagList[4]
+       h2.innerHTML = tagList[0] + tagList[1] + tagList[2] + tagList[3] + tagList[4]
        description.appendChild(h2)
 
        const hed = document.createElement("p")
