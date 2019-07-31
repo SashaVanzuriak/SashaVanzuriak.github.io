@@ -1,7 +1,8 @@
 const colums = document.querySelector(".col-sm")
-let number = -1
+const teg = window.location.href
+const tegs = teg.split("#")[1]
 
-fetch("https://dev.to/api/articles").then(data => data.json())
+fetch("https://dev.to/api/articles?tag=" + tegs).then(data => data.json())
 .then(data => {
     data.forEach(element => {
         const user = element.user
@@ -44,7 +45,6 @@ fetch("https://dev.to/api/articles").then(data => data.json())
                      
          } else {
               tagList[i] =  " #" + tagList[i]
-              number = number + 1
          }
        }
        h2.innerHTML = tagList[0] + tagList[1] + tagList[2] + tagList[3] + tagList[4]
@@ -75,4 +75,3 @@ fetch("https://dev.to/api/articles").then(data => data.json())
        
     })
 })
-

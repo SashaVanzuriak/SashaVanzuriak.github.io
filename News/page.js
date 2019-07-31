@@ -7,6 +7,7 @@ function home() {
 }
 
 fetch('https://dev.to/api/articles/' + id).then(data => data.json()).then(data => {
+    const user = data.user
     const colums = document.querySelector(".col-sm")
 
     const imgFluid = document.createElement("img")
@@ -24,5 +25,12 @@ fetch('https://dev.to/api/articles/' + id).then(data => data.json()).then(data =
     const text = document.createElement("p")
     text.innerHTML += bodyhtml
     colums.appendChild(text)
+
+    const profileImage = document.createElement("img")
+    profileImage.src = user.profile_image
+    profileImage.className = "img-fluid"
+    profileImage.alt = "Responsive image"
+    profileImage.id  = "profileImage"
+    colums.appendChild(profileImage)
 })
 
