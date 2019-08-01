@@ -38,27 +38,68 @@ fetch("https://dev.to/api/articles?tag=" + tegs).then(data => data.json())
        description.className = "description"
        blogCard.appendChild(description)
 
-       const h2 = document.createElement("h2")
-       for(let i=0; i<5; i++){
-           if(tagList[i] === undefined){
-             tagList[i] = " "
-                     
+       const a = document.createElement("a")
+       if(tagList[0] === undefined) {
+           tagList[0] = " "
+                   
+      } else {
+            tagList[0] =  " #" + tagList[0]        
+       }
+       a.innerHTML = tagList[0]
+       a.onclick = function tegs() {
+         window.location.href = "./teg.html?" + tagList[0]
+         window.location.reload()
+       }
+       description.appendChild(a)
+
+       const a1 = document.createElement("a")
+       if(tagList[1] === undefined) {
+           tagList[1] = " "
+                   
+        } else {
+            tagList[1] =  " #" + tagList[1]        
+        }
+       a1.innerHTML = tagList[1]
+       a1.onclick = function tegs() {
+         window.location.href = "./teg.html?" + tagList[1]
+         window.location.reload()
+       }
+        description.appendChild(a1)
+
+       const a2 = document.createElement("a")
+       if(tagList[2] === undefined) {
+           tagList[2] = " "
+                   
          } else {
-              tagList[i] =  " #" + tagList[i]
+             tagList[2] =  " #" + tagList[2]        
+          }
+       a2.innerHTML = tagList[2]
+       a2.onclick = function tegs() {
+          window.location.href = "./teg.html?" + tagList[2]
+          window.location.reload()
+        }
+       description.appendChild(a2)
+
+       const a3 = document.createElement("a")
+       if(tagList[3] === undefined) {
+         tagList[3] = " "
+                   
+        } else {
+        tagList[3] =  " #" + tagList[3]        
          }
-       }
-       h2.innerHTML = tagList[0] + tagList[1] + tagList[2] + tagList[3] + tagList[4]
-       h2.onclick = function tegs() {
-           window.location.href = "./teg.html?" + tagList[0]
-       }
-       description.appendChild(h2)
+       a3.innerHTML = tagList[3]
+       a3.onclick = function tegs() {
+         window.location.href = "./teg.html?" + tagList[3]
+         window.location.reload()
+         }
+       description.appendChild(a3)
 
        const hed = document.createElement("p")
        hed.innerHTML = element.title
        hed.onclick = function all(){
         window.location.href = "./page.html?id=" + photo.id
         
-    }
+       }
        description.appendChild(hed)
        
        const p = document.createElement("p")
