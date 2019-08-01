@@ -2,6 +2,11 @@ const colums = document.querySelector(".col-sm")
 const teg = window.location.href
 const tegs = teg.split("#")[1]
 
+
+function home() {
+    window.location.href = "./index.html"
+}
+
 fetch("https://dev.to/api/articles?tag=" + tegs).then(data => data.json())
 .then(data => {
     data.forEach(element => {
