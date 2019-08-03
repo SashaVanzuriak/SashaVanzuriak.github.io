@@ -33,10 +33,15 @@ fetch("https://dev.to/api/articles/" + id)
     userName.className = "userName";
     colums.appendChild(userName);
 
+    const date = document.createElement("p");
+    date.innerHTML = data.readable_publish_date;
+    date.className = "publicatonDate";
+    colums.appendChild(date);
+
     tagList.forEach(tag => {
       const a = document.createElement("a");
       a.innerHTML = " #" + tag;
-      a.className = "a";
+      a.className = "button";
       a.onclick = function tags() {
         window.location.href = "./teg.html" + "#" + tag;
       };

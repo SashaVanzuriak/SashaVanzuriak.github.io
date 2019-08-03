@@ -29,9 +29,10 @@ iframe {
 .userName {
   font-size: 40px;
   text-indent: 20px;
+  float: left;
 }
 
-.col-sm .a {
-  color: blue;
-  cursor: pointer;
+.publicatonDate {
+  font-size: 40px;
+  text-indent: 20px;
 }
