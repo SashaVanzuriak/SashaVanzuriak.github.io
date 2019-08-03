@@ -45,6 +45,7 @@ fetch("https://dev.to/api/articles?tag=" + tegs)
 
       tagList.forEach(tag => {
         const a = document.createElement("a");
+        a.className = "a";
         a.innerHTML = " #" + tag;
         a.onclick = function tags() {
           window.location.href = "./teg.html" + "#" + tag;
