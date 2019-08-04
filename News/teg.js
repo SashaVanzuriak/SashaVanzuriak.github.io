@@ -56,6 +56,7 @@ fetch("https://dev.to/api/articles?tag=" + tegs)
 
       const hed = document.createElement("p");
       hed.innerHTML = element.title;
+      hed.className = "hed";
       hed.onclick = function all() {
         window.location.href = "./page.html?id=" + photo.id;
       };
