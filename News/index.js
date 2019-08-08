@@ -32,6 +32,9 @@ fetch("https://dev.to/api/articles")
 
       const authorName = document.createElement("a");
       authorName.innerHTML = user.name;
+      authorName.onclick = function users() {
+        window.location.href = "./user.html" + "#" + user.github_username;
+      };
       author.appendChild(authorName);
 
       const description = document.createElement("div");

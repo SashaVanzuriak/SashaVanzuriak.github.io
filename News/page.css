@@ -36,3 +36,8 @@ iframe {
   font-size: 40px;
   text-indent: 20px;
 }
+
+.button {
+  cursor: pointer;
+  background-color: blue;
+}
