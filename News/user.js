@@ -4,18 +4,30 @@ console.log(datas);
 fetch("https://dev.to/api/users/by_username?url=" + datas)
   .then(element => element.json())
   .then(element => {
+    Div = document.createElement("div");
+    Div.className = "Div";
+    document.body.appendChild(Div);
+
+    imgDiv = document.createElement("div");
+    imgDiv.className = "imgDiv";
+    Div.appendChild(imgDiv);
+
     image = document.createElement("img");
     image.className = "img";
     image.src = element.profile_image;
-    document.body.appendChild(image);
+    imgDiv.appendChild(image);
+
+    userNameDiv = document.createElement("div");
+    userNameDiv.className = "userNameDiv";
+    Div.appendChild(userNameDiv);
 
     userName = document.createElement("p");
     userName.className = "userName";
     userName.innerHTML = element.name;
-    document.body.appendChild(userName);
+    userNameDiv.appendChild(userName);
 
     summary = document.createElement("p");
     summary.innerHTML = element.summary;
-    summary.className = "summery";
-    document.body.appendChild(summary);
+    summary.className = "summary";
+    userNameDiv.appendChild(summary);
   });

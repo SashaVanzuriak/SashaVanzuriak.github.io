@@ -1,7 +1,13 @@
+.Div {
+  height: 500px;
+  width: 100%;
+  background-color: black;
+}
+
 .img {
   float: left;
   height: 40%;
-  width: 40%;
+  width: 20%;
   border-radius: 25px;
   min-width: 200px;
   min-height: 200px;
@@ -9,8 +15,12 @@
 .userName {
   text-align: center;
   font-size: 75px;
+  color: white;
 }
 
-.summery {
-  font-size: 25px;
+.summary {
+  font-size: 20px;
+  color: white;
+  max-width: 70%;
+  min-width: 50%;
 }
