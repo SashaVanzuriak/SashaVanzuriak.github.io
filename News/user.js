@@ -30,4 +30,9 @@ fetch("https://dev.to/api/users/by_username?url=" + datas)
     summary.innerHTML = element.summary;
     summary.className = "summary";
     userNameDiv.appendChild(summary);
+
+    join = document.createElement("p");
+    join.className = "join";
+    join.innerHTML = "" + element.joined_at;
+    userNameDiv.appendChild(join);
   });
