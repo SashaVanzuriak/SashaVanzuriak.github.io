@@ -12,7 +12,7 @@
   float: left;
   font-size: 50px;
   cursor: pointer;
-  color: #b72929;
+  color: #88fee3;
 }
 
 .twoButton {
@@ -22,7 +22,7 @@
   float: left;
   font-size: 50px;
   cursor: pointer;
-  color: #b72929;
+  color: #88fee3;
 }
 
 .treeButton {
@@ -32,5 +32,13 @@
   float: left;
   font-size: 50px;
   cursor: pointer;
-  color: #b72929;
+  color: #88fee3;
+}
+.BodyDiv {
+  width: 100%;
+}
+
+.CenterDiv {
+  position: relative;
+  left: 35%;
 }
