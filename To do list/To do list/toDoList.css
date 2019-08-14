@@ -1,0 +1,36 @@
+.BodyNav {
+  height: 80px;
+  width: 100%;
+  background-color: #9757ea;
+  border-radius: 35px;
+}
+
+.oneButton {
+  position: relative;
+  top: 10px;
+  left: 20%;
+  float: left;
+  font-size: 50px;
+  cursor: pointer;
+  color: #b72929;
+}
+
+.twoButton {
+  position: relative;
+  top: 10px;
+  left: 30%;
+  float: left;
+  font-size: 50px;
+  cursor: pointer;
+  color: #b72929;
+}
+
+.treeButton {
+  position: relative;
+  top: 10px;
+  left: 40%;
+  float: left;
+  font-size: 50px;
+  cursor: pointer;
+  color: #b72929;
+}
