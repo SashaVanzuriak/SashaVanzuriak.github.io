@@ -1,11 +1,17 @@
 const box = document.querySelector(".box");
-const Cheack = document.querySelector(".Todo");
+const CenterDiv = document.querySelector(".CenterDiv");
 
 function create() {
+  const Cheack = document.createElement("div");
+  CenterDiv.appendChild(Cheack);
+
   const Imges = document.createElement("img");
+  Imges.className = "Img";
   Imges.src = "./Img/NonClick.png";
+  Imges.onclick = function clcik() {
+    Image.src = "./Img/Click.png";
+  };
   Cheack.appendChild(Imges);
-  console.log(1);
 }
 
 function Box() {
