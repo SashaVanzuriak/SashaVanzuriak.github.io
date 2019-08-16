@@ -41,4 +41,14 @@
 .Img {
   position: relative;
   left: 35%;
+  float: left;
+}
+
+.Input {
+  position: relative;
+  top: 15px;
+  left: 35%;
+  height: 50px;
+  border-color: #34386b;
+  font-size: 25px;
 }

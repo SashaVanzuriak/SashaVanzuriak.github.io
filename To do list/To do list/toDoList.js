@@ -12,6 +12,10 @@ function create() {
     Imges.src = "./Img/Click.png";
   };
   Cheack.appendChild(Imges);
+
+  Input = document.createElement("input");
+  Input.className = "Input";
+  Cheack.appendChild(Input);
 }
 
 function Box() {
