@@ -38,8 +38,12 @@
   width: 100%;
 }
 
+.Cheack {
+  height: 70px;
+}
+
 .Img {
-  position: relative;
+  position: absolute;
   left: 35%;
   float: left;
 }
@@ -47,8 +51,8 @@
 .Input {
   position: relative;
   top: 15px;
-  left: 35%;
+  left: 43%;
+  width: 15%;
   height: 50px;
   border-color: #34386b;
-  font-size: 25px;
 }

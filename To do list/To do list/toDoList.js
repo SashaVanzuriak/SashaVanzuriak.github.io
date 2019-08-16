@@ -3,6 +3,7 @@ const CenterDiv = document.querySelector(".CenterDiv");
 
 function create() {
   const Cheack = document.createElement("div");
+  Cheack.className = "Cheack";
   CenterDiv.appendChild(Cheack);
 
   const Imges = document.createElement("img");
