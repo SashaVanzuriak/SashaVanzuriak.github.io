@@ -8,8 +8,8 @@ function create() {
   const Imges = document.createElement("img");
   Imges.className = "Img";
   Imges.src = "./Img/NonClick.png";
-  Imges.onclick = function clcik() {
-    Image.src = "./Img/Click.png";
+  Imges.onclick = function click() {
+    Imges.src = "./Img/Click.png";
   };
   Cheack.appendChild(Imges);
 }
