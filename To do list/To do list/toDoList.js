@@ -18,7 +18,8 @@ function create() {
   Input.className = "Input";
   Cheack.appendChild(Input);
 
-  ImgOk = docuemnt.createElement("img");
-  ImgOk.src = "./Img/ok-button.png";
-  Cheack.appendChild(ImgOk);
+  OkImg = docuemnt.createElement("img");
+  OkImg.className = "OkImg";
+  OkImg.src = "./Img/ok-button.png";
+  Cheack.appendChild(OkImg);
 }
