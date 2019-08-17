@@ -20,6 +20,5 @@ function create() {
 
   OkImg = docuemnt.createElement("img");
   OkImg.className = "OkImg";
-  OkImg.src = "./Img/ok-button.png";
-  Cheack.appendChild(OkImg);
+  docuemnt.body.appendChild(OkImg);
 }
