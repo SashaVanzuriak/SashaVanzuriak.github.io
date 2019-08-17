@@ -17,8 +17,8 @@ function create() {
   Input = document.createElement("input");
   Input.className = "Input";
   Cheack.appendChild(Input);
-}
 
-function Box() {
-  box.src = "./Img/Click.png";
+  ImgOk = docuemnt.createElement("img");
+  ImgOk.src = "./Img/ok-button.png";
+  Cheack.appendChild(ImgOk);
 }
