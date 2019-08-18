@@ -14,11 +14,12 @@ function create() {
   };
   Cheack.appendChild(Imges);
 
-  Input = document.createElement("input");
+  const Input = document.createElement("input");
   Input.className = "Input";
   Cheack.appendChild(Input);
 
-  OkImg = docuemnt.createElement("img");
+  const OkImg = document.createElement("img");
   OkImg.className = "OkImg";
-  docuemnt.body.appendChild(OkImg);
+  OkImg.src = "./Img/Ok.png";
+  Cheack.appendChild(OkImg);
 }

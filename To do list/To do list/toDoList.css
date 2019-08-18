@@ -43,6 +43,7 @@
 }
 
 .Img {
+  cursor: pointer;
   position: absolute;
   left: 35%;
   float: left;
@@ -55,4 +56,5 @@
   width: 15%;
   height: 50px;
   border-color: #34386b;
+  float: left;
 }
