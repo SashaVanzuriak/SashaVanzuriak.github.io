@@ -21,5 +21,10 @@ function create() {
   const OkImg = document.createElement("img");
   OkImg.className = "OkImg";
   OkImg.src = "./Img/Ok.png";
+  OkImg.onclick = function Save() {
+    const TodoText = Document.createElement("p");
+    TodoText.innerHTMl = Input.innerHTML;
+    Cheack.append(TodoText);
+  };
   Cheack.appendChild(OkImg);
 }
