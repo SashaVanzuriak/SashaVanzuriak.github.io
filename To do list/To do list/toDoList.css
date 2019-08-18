@@ -57,4 +57,10 @@
   height: 50px;
   border-color: #34386b;
   float: left;
+  font-size: 20px;
+}
+
+.OkImg {
+  position: relative;
+  left: 44%;
 }
