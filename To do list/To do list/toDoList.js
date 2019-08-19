@@ -20,6 +20,10 @@ function create() {
 
   const OkImg = document.createElement("img");
   OkImg.className = "OkImg";
+  OkImg.onclick = function clear() {
+    OkImg.remove();
+    Input.remove();
+  };
   OkImg.src = "./Img/Ok.png";
   Cheack.appendChild(OkImg);
 }
