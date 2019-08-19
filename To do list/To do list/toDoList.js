@@ -21,8 +21,13 @@ function create() {
   const OkImg = document.createElement("img");
   OkImg.className = "OkImg";
   OkImg.onclick = function clear() {
-    OkImg.remove();
+    const Inputs = document.querySelector(".Input");
+    const p = document.createElement("p");
+    p.innerHTML = Inputs.value;
+    Cheack.appendChild(p);
+    console.log(Inputs.value);
     Input.remove();
+    OkImg.remove();
   };
   OkImg.src = "./Img/Ok.png";
   Cheack.appendChild(OkImg);
