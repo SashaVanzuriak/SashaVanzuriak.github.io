@@ -20,6 +20,16 @@
 .left {
   min-height: 88vh;
   height: 70vh;
-  width: 42%;
+  width: 37%;
+  background-color: #c7c6c6;
+  float: left;
+}
+
+.right {
+  position: relative;
+  left: 82%;
+  width: 18%;
+  min-height: 88vh;
+  height: 88vh;
   background-color: #c7c6c6;
 }
