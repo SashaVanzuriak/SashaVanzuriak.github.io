@@ -10,11 +10,17 @@
   left: 45%;
   top: 30px;
 }
+.list {
+  position: relative;
+  top: 5px;
+  left: 26px;
+  float: left;
+}
 
 .searchImg {
   position: relative;
   top: 17px;
-  left: 42%;
+  left: 39%;
 }
 
 .left {
