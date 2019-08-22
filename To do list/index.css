@@ -28,6 +28,11 @@
   top: 6px;
   left: 60%;
 }
+.trash {
+  position: relative;
+  left: 63%;
+  top: 6px;
+}
 
 .left {
   min-height: 88vh;
@@ -40,7 +45,7 @@
 .right {
   position: relative;
   left: 82%;
-  width: 18%;
+  width: 18.4%;
   min-height: 88vh;
   height: 88vh;
   background-color: #c7c6c6;
