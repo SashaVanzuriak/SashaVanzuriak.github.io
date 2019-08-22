@@ -20,7 +20,13 @@
 .searchImg {
   position: relative;
   top: 17px;
-  left: 39%;
+  left: 42%;
+  float: left;
+}
+.plus {
+  position: relative;
+  top: 6px;
+  left: 60%;
 }
 
 .left {
