@@ -1,8 +1,8 @@
 .head {
   height: 60px;
   width: 100%;
-  background-color: #df1b1b;
-  border: 3px solid #df1b1b;
+  background-color: #fe2b2b;
+  border: 3px solid #fe2b2b;
 }
 
 .search {
@@ -10,6 +10,7 @@
   left: 45%;
   top: 30px;
 }
+
 .list {
   position: relative;
   top: 5px;
@@ -24,12 +25,14 @@
   float: left;
   cursor: pointer;
 }
+
 .plus {
   position: relative;
   top: 6px;
   left: 60%;
   cursor: pointer;
 }
+
 .trash {
   position: relative;
   left: 63%;
@@ -43,6 +46,11 @@
   width: 37%;
   background-color: #c7c6c6;
   float: left;
+}
+.box {
+  position: relative;
+  top: 20px;
+  left: 300px;
 }
 
 .right {
@@ -61,11 +69,13 @@
   width: 44%;
   background-color: #fefefe;
 }
+
 .today {
   position: relative;
   left: 250px;
   font-size: 30px;
 }
+
 .DayinMonth {
   position: relative;
   left: 260px;
@@ -76,4 +86,5 @@
   position: relative;
   top: 10px;
   left: 10px;
+  cursor: pointer;
 }
