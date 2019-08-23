@@ -68,7 +68,8 @@
 }
 .DayinMonth {
   position: relative;
-  left: 240px;
+  left: 260px;
+  font-size: 20px;
 }
 
 .miniPlus {
