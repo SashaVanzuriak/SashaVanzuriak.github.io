@@ -1,8 +1,8 @@
 .head {
   height: 60px;
   width: 100%;
-  background-color: #1e0b97;
-  border: 3px solid #3f25e3;
+  background-color: #df1b1b;
+  border: 3px solid #df1b1b;
 }
 
 .search {
@@ -22,16 +22,19 @@
   top: 17px;
   left: 42%;
   float: left;
+  cursor: pointer;
 }
 .plus {
   position: relative;
   top: 6px;
   left: 60%;
+  cursor: pointer;
 }
 .trash {
   position: relative;
   left: 63%;
   top: 6px;
+  cursor: pointer;
 }
 
 .left {
@@ -43,10 +46,30 @@
 }
 
 .right {
-  position: relative;
-  left: 82%;
-  width: 18.4%;
+  position: absolute;
+  left: 80%;
+  width: 19.8%;
   min-height: 88vh;
   height: 88vh;
   background-color: #c7c6c6;
+}
+
+.center {
+  position: absolute;
+  left: 37%;
+  height: 88vh;
+  width: 44%;
+  background-color: #fefefe;
+}
+.today {
+  position: relative;
+  left: 8px;
+  font-size: 30px;
+}
+
+.miniPlus {
+  position: relative;
+  top: 10px;
+  left: 10px;
+  color: red;
 }
