@@ -63,13 +63,16 @@
 }
 .today {
   position: relative;
-  left: 8px;
+  left: 250px;
   font-size: 30px;
+}
+.DayinMonth {
+  position: relative;
+  left: 240px;
 }
 
 .miniPlus {
   position: relative;
   top: 10px;
   left: 10px;
-  color: red;
 }
