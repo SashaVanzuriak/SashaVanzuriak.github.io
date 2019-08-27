@@ -17,4 +17,10 @@ const Months = [
   "Dec"
 ];
 
-today.innerHTML += " " + now.getDate() + " " + DayWeeks[now.getDay()];
+today.innerHTML +=
+  " " +
+  DayWeeks[now.getDay()] +
+  " " +
+  now.getDate() +
+  " " +
+  Months[now.getMonth() + 1];
