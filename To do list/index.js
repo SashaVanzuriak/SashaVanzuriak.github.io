@@ -18,6 +18,7 @@ const Months = [
 ];
 
 today.innerHTML +=
+  "Today" +
   " " +
   DayWeeks[now.getDay()] +
   " " +
