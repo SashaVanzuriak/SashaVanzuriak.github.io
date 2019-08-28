@@ -10,4 +10,12 @@
   top: 65px;
   left: 37%;
   cursor: pointer;
+  float: left;
+}
+
+.add {
+  position: relative;
+  left: 38%;
+  top: 66px;
+  font-size: 20px;
 }
