@@ -19,3 +19,9 @@
   top: 66px;
   font-size: 20px;
 }
+
+.textInput {
+  position: relative;
+  left: 38%;
+  top: 66px;
+}

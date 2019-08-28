@@ -35,5 +35,6 @@ plus.onclick = function Add() {
 
   const Input = document.createElement("input");
   Input.className = "textInput";
+  Input.value = "Print text";
   box.appendChild(Input);
 };
