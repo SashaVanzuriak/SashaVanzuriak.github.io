@@ -36,5 +36,11 @@ plus.onclick = function Add() {
   const Input = document.createElement("input");
   Input.className = "textInput";
   Input.value = "Print text";
+  Input.placeholder = "text";
   box.appendChild(Input);
+
+  const InputDate = document.createElement("input");
+  InputDate.className = "dateInput";
+  InputDate.value = now.getDate();
+  box.appendChild(InputDate);
 };

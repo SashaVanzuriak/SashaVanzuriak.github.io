@@ -24,4 +24,11 @@
   position: relative;
   left: 38%;
   top: 66px;
+  float: left;
+}
+
+.dateInput {
+  position: relative;
+  left: 38%;
+  top: 66px;
 }
