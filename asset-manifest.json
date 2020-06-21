@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/static/css/main.865cf567.chunk.css",
+    "main.js": "/static/js/main.a152a40e.chunk.js",
+    "main.js.map": "/static/js/main.a152a40e.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.468c329b.js",
+    "runtime-main.js.map": "/static/js/runtime-main.468c329b.js.map",
+    "static/js/2.2c858fb5.chunk.js": "/static/js/2.2c858fb5.chunk.js",
+    "static/js/2.2c858fb5.chunk.js.map": "/static/js/2.2c858fb5.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.dfea4581c719f249f0ad01ddc130abb4.js": "/precache-manifest.dfea4581c719f249f0ad01ddc130abb4.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.865cf567.chunk.css.map": "/static/css/main.865cf567.chunk.css.map",
+    "static/js/2.2c858fb5.chunk.js.LICENSE.txt": "/static/js/2.2c858fb5.chunk.js.LICENSE.txt",
+    "static/media/GetLucky.mp3": "/static/media/GetLucky.8f951314.mp3",
+    "static/media/GetLucky.jpg": "/static/media/GetLucky.97be4414.jpg",
+    "static/media/HarderBetterStronger.jpg": "/static/media/HarderBetterStronger.8b5ed0cd.jpg",
+    "static/media/HarderBetterStronger.mp3": "/static/media/HarderBetterStronger.dbe134b7.mp3",
+    "static/media/InstantCrush.jpeg": "/static/media/InstantCrush.581ae568.jpeg",
+    "static/media/InstantCrush.mp3": "/static/media/InstantCrush.7763a2e5.mp3",
+    "static/media/OneMoreTime.jpg": "/static/media/OneMoreTime.52bcc2e1.jpg",
+    "static/media/OneMoreTime.mp3": "/static/media/OneMoreTime.cfd7a639.mp3"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.468c329b.js",
+    "static/js/2.2c858fb5.chunk.js",
+    "static/css/main.865cf567.chunk.css",
+    "static/js/main.a152a40e.chunk.js"
+  ]
+}
